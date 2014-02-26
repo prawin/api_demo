@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
+  # protect_from_forgery
   before_filter :allow_ajax_request_from_other_domains
 
   def allow_ajax_request_from_other_domains
