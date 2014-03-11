@@ -1,4 +1,8 @@
 ApiDemo::Application.routes.draw do
+  resources :users do
+    resources :books
+  end
+
   resources :users
 
   match '/*path' => 'application#cors_preflight_check', :via => :options
